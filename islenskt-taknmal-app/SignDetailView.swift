@@ -14,12 +14,18 @@ struct SignDetailView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @State var sign: Sign?
-
+    @State var related_signs: [Sign] = []
+    
     var body: some View {
         VStack(){
             Text(sign?.phrase ?? "Missing")
             YouTubeView(webViewModel: WebViewModel(id: sign?.youtube_id ?? "")).frame(width: 300,height:400, alignment: .center)
-        }
+            List(related_signs){sign in
+                NavigationLink(destination: SignDetailView(sign:sign, related_signs: relatedSignsById(id: sign.id))) {
+                    SignView(sign: sign)
+                }
+            }
+        }.padding()
     }
 
 }

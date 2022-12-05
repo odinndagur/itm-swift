@@ -20,17 +20,20 @@ struct SignCollection: Identifiable {
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    let collections: [SignCollection] = [SignCollection(name: "Öll tákn", signs: signList),SignCollection(name: "Skóli",signs: [signById(id:5),signById(id:2),signById(id: 50),signById(id:20),signById(id:51),signById(id:22)]),SignCollection(name: "LRL",signs: [signById(id:500),signById(id:201),signById(id:510),signById(id:290),signById(id: 522),signById(id:230)])]
+
     
     var body: some View {
         NavigationView {
-            List(collections) { c in
-                NavigationLink(c.name, destination:SignListView(current_collection: c))
-//                Text(c.name)
+            VStack {
+                Text("Íslenskt táknmál")
+                    .bold()
+                    .padding(.top, 150)
+                    .font(.system(size:35))
+                List(collections) { c in
+                    NavigationLink(c.name, destination:SignListView(current_collection: c))
+                }
             }
-       }
-//            SignListView()
-        
+       }        
     }
     
     private let itemFormatter: DateFormatter = {

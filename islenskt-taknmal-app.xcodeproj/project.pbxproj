@@ -77,6 +77,7 @@
 		18FB2519292CFCBE00972AB8 /* islenskt-taknmal-app */ = {
 			isa = PBXGroup;
 			children = (
+				186D494F292E2C2800C12308 /* SignView.swift */,
 				18FB251A292CFCBE00972AB8 /* islenskt_taknmal_appApp.swift */,
 				18FB251C292CFCBE00972AB8 /* ContentView.swift */,
 				18235D52293CB31C00AC6C03 /* SignListView.swift */,
@@ -95,7 +96,6 @@
 		18FB2520292CFCC000972AB8 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				186D494F292E2C2800C12308 /* SignView.swift */,
 				18FB2521292CFCC000972AB8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";

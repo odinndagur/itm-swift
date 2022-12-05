@@ -18,6 +18,10 @@ let phrase = Expression<String>("phrase")
 let youtube_link = Expression<String>("youtube_link")
 let sign_id = Expression<Int>("id")
 
+let sign_related = Table("sign_related")
+let sign_related_sign_id = Expression<Int>("sign_id")
+let sign_related_related_id = Expression<Int>("related_id")
+
 //let loadedUsers: [User] = try db.prepare(users).map { row in
 //    return try row.decode()
 //}
@@ -61,14 +65,22 @@ func signById(id:Int) -> Sign{
     )
 }
 
-//func printStuff(){
-//    for s in try! db.prepare(signs) {
-//        print("id: \(s[youtube_id]), phrase: \(s[phrase])")
-//        // id: 1, email: alice@mac.com, name: Optional("Alice")
-//    }
-//    // SELECT * FROM "users"
-//}
-//
-//func getStuff() -> AnySequence<Row>{
-//    return try! db.prepare(signs)
-//}
+func signsByIds(ids:[Int]) -> [Sign]{
+    return ids.map {id in
+        return signById(id: id)
+    }
+}
+
+func relatedSignsById(id:Int) -> [Sign] {
+    let related_signs = try! db.prepare(sign_related.filter(sign_related_sign_id == id)).map {related in
+        return signById(id: related[sign_related_related_id])}
+    return related_signs
+}
+
+let collections: [SignCollection] = [
+    SignCollection(name: "Öll tákn", signs: signList),
+    SignCollection(name: "Vikudagar", signs: signsByIds(ids: [5890,10695,6042,2082,2703,5180,8981])),
+    SignCollection(name: "Mánuðir", signs: signsByIds(ids: [4367,1983,5782,288,5706,4448,4447,470,7726,6638,6532,1346])),
+    SignCollection(name: "Skóli",signs: signsByIds(ids: [5,2,50,20,51,22])),
+    SignCollection(name: "LRL",signs: signsByIds(ids: [500,201,510,290,522,230]))
+]

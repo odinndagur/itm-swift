@@ -12,22 +12,11 @@ import Foundation
 
 struct SignListView: View {
     @Environment(\.managedObjectContext) private var viewContext
-
-//    @FetchRequest(
-//        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-//        animation: .default)
-//    private var items: FetchedResults<Item>
-//    var user_collection: [Int] = userDefaults.object(forKey: "user_collection") as? [Int] ?? [1,2,3,4]
     @State var searchQuery = ""
-    @State var filteredSigns = signList
+    @State var filteredSigns: [Sign] = []
     @State var current_collection: SignCollection
-//    let user_signs: [Sign]
-//    init(){
-//        user_signs = Array(Set(user_collection)).map { id in
-//            return signById(id: id)
-//        }
-//    }
-    
+    @State private var editMode = EditMode.inactive
+
     func filterSigns() {
       if searchQuery.isEmpty {
         // 1
@@ -38,43 +27,49 @@ struct SignListView: View {
           $0.phrase
             .localizedCaseInsensitiveContains(searchQuery)
         }
-//          filteredSigns = try! db
-//              .prepare(signs
-//                .filter(phrase.like("%" + searchQuery + "%"))
-//              ).map(
-//                { row in
-//                    return Sign(
-//                        id: row[sign_id],
-//                        phrase: row[phrase],
-//                        youtube_id: row[youtube_id],
-//                        youtube_link: row[youtube_link]
-//                    )
-//                })
       }
     }
+    
+    func delete(at offsets: IndexSet) {
+        filteredSigns.remove(atOffsets: offsets)
+    }
+    
+    private var addButton: some View {
+        switch editMode {
+            case .inactive:
+                return AnyView(Button(action: onAdd) { Image(systemName: "plus") })
+            default:
+                return AnyView(EmptyView())
+            }
+        }
+        
+        func onAdd() {
+            // To be implemented in the next section
+        }
 
     var body: some View {
-            NavigationView {
-//                VStack{
-//                List(user_collection, id: \.self) {id in
-//                    SignView(sign: signById(id: id))
-//                }
-                List(filteredSigns) {sign in
-                    NavigationLink(destination: SignDetailView(sign:sign)) {
-                        SignView(sign: sign)
-                    }
+        List{
+            ForEach(filteredSigns) {sign in
+                NavigationLink(destination: SignDetailView(sign:sign, related_signs: relatedSignsById(id: sign.id))) {
+                    SignView(sign: sign)
                 }
+            }
+            .onDelete{filteredSigns.remove(atOffsets: $0)}
+            .onMove{filteredSigns.move(fromOffsets: $0,toOffset: $1)}
+        }
+//        .environment(\.editMode, $editMode)
+//        .navigationBarItems(leading:EditButton(),trailing: addButton)
                 .searchable(text: $searchQuery,placement:.navigationBarDrawer(displayMode:SearchFieldPlacement.NavigationBarDrawerDisplayMode.always))
                 .onChange(of: searchQuery) { _ in
                     filterSigns()
                 }
-                .navigationTitle("Tákn")
+                .onAppear(perform: filterSigns)
+                .navigationTitle("\(current_collection.name)")
+                .padding()
+                .toolbar{
+                    EditButton()
+                }
             }
-//            }
-            
-
-        }
-
 }
 
 private let itemFormatter: DateFormatter = {
