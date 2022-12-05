@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18235D53293CB31C00AC6C03 /* SignListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18235D52293CB31C00AC6C03 /* SignListView.swift */; };
+		1847AC84292E366300428711 /* YoutubeStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1847AC83292E366300428711 /* YoutubeStuff.swift */; };
+		186D4950292E2C2800C12308 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D494F292E2C2800C12308 /* SignView.swift */; };
+		186D4952292E321C00C12308 /* SignDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D4951292E321C00C12308 /* SignDetailView.swift */; };
+		18FB251B292CFCBE00972AB8 /* islenskt_taknmal_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB251A292CFCBE00972AB8 /* islenskt_taknmal_appApp.swift */; };
+		18FB251D292CFCBE00972AB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB251C292CFCBE00972AB8 /* ContentView.swift */; };
+		18FB251F292CFCC000972AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FB251E292CFCC000972AB8 /* Assets.xcassets */; };
+		18FB2522292CFCC000972AB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FB2521292CFCC000972AB8 /* Preview Assets.xcassets */; };
+		18FB2524292CFCC000972AB8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB2523292CFCC000972AB8 /* Persistence.swift */; };
+		18FB2527292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18FB2525292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodeld */; };
+		18FB252F292CFCEC00972AB8 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 18FB252E292CFCEC00972AB8 /* SQLite */; };
+		18FB2531292CFD7700972AB8 /* db.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = 18FB2530292CFD7700972AB8 /* db.sqlite3 */; };
+		18FB2533292CFEA400972AB8 /* db_stuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB2532292CFEA400972AB8 /* db_stuff.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18235D52293CB31C00AC6C03 /* SignListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignListView.swift; sourceTree = "<group>"; };
+		1847AC83292E366300428711 /* YoutubeStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeStuff.swift; sourceTree = "<group>"; };
+		186D494F292E2C2800C12308 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		186D4951292E321C00C12308 /* SignDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignDetailView.swift; sourceTree = "<group>"; };
+		18FB2517292CFCBE00972AB8 /* islenskt-taknmal-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "islenskt-taknmal-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FB251A292CFCBE00972AB8 /* islenskt_taknmal_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = islenskt_taknmal_appApp.swift; sourceTree = "<group>"; };
+		18FB251C292CFCBE00972AB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18FB251E292CFCC000972AB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18FB2521292CFCC000972AB8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18FB2523292CFCC000972AB8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		18FB2526292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = islenskt_taknmal_app.xcdatamodel; sourceTree = "<group>"; };
+		18FB2530292CFD7700972AB8 /* db.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite3; sourceTree = "<group>"; };
+		18FB2532292CFEA400972AB8 /* db_stuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = db_stuff.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18FB2514292CFCBE00972AB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FB252F292CFCEC00972AB8 /* SQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18519E50292D112C0027E284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18FB250E292CFCBE00972AB8 = {
+			isa = PBXGroup;
+			children = (
+				18FB2519292CFCBE00972AB8 /* islenskt-taknmal-app */,
+				18FB2518292CFCBE00972AB8 /* Products */,
+				18519E50292D112C0027E284 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18FB2518292CFCBE00972AB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FB2517292CFCBE00972AB8 /* islenskt-taknmal-app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18FB2519292CFCBE00972AB8 /* islenskt-taknmal-app */ = {
+			isa = PBXGroup;
+			children = (
+				18FB251A292CFCBE00972AB8 /* islenskt_taknmal_appApp.swift */,
+				18FB251C292CFCBE00972AB8 /* ContentView.swift */,
+				18235D52293CB31C00AC6C03 /* SignListView.swift */,
+				18FB2532292CFEA400972AB8 /* db_stuff.swift */,
+				186D4951292E321C00C12308 /* SignDetailView.swift */,
+				1847AC83292E366300428711 /* YoutubeStuff.swift */,
+				18FB251E292CFCC000972AB8 /* Assets.xcassets */,
+				18FB2530292CFD7700972AB8 /* db.sqlite3 */,
+				18FB2523292CFCC000972AB8 /* Persistence.swift */,
+				18FB2525292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodeld */,
+				18FB2520292CFCC000972AB8 /* Preview Content */,
+			);
+			path = "islenskt-taknmal-app";
+			sourceTree = "<group>";
+		};
+		18FB2520292CFCC000972AB8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				186D494F292E2C2800C12308 /* SignView.swift */,
+				18FB2521292CFCC000972AB8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18FB2516292CFCBE00972AB8 /* islenskt-taknmal-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18FB252A292CFCC000972AB8 /* Build configuration list for PBXNativeTarget "islenskt-taknmal-app" */;
+			buildPhases = (
+				18FB2513292CFCBE00972AB8 /* Sources */,
+				18FB2514292CFCBE00972AB8 /* Frameworks */,
+				18FB2515292CFCBE00972AB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "islenskt-taknmal-app";
+			packageProductDependencies = (
+				18FB252E292CFCEC00972AB8 /* SQLite */,
+			);
+			productName = "islenskt-taknmal-app";
+			productReference = 18FB2517292CFCBE00972AB8 /* islenskt-taknmal-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18FB250F292CFCBE00972AB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					18FB2516292CFCBE00972AB8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 18FB2512292CFCBE00972AB8 /* Build configuration list for PBXProject "islenskt-taknmal-app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18FB250E292CFCBE00972AB8;
+			packageReferences = (
+				18FB252D292CFCEC00972AB8 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
+			productRefGroup = 18FB2518292CFCBE00972AB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18FB2516292CFCBE00972AB8 /* islenskt-taknmal-app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18FB2515292CFCBE00972AB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FB2531292CFD7700972AB8 /* db.sqlite3 in Resources */,
+				18FB2522292CFCC000972AB8 /* Preview Assets.xcassets in Resources */,
+				18FB251F292CFCC000972AB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18FB2513292CFCBE00972AB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18FB2524292CFCC000972AB8 /* Persistence.swift in Sources */,
+				18FB2533292CFEA400972AB8 /* db_stuff.swift in Sources */,
+				1847AC84292E366300428711 /* YoutubeStuff.swift in Sources */,
+				18235D53293CB31C00AC6C03 /* SignListView.swift in Sources */,
+				186D4952292E321C00C12308 /* SignDetailView.swift in Sources */,
+				18FB251D292CFCBE00972AB8 /* ContentView.swift in Sources */,
+				186D4950292E2C2800C12308 /* SignView.swift in Sources */,
+				18FB251B292CFCBE00972AB8 /* islenskt_taknmal_appApp.swift in Sources */,
+				18FB2527292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		18FB2528292CFCC000972AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18FB2529292CFCC000972AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18FB252B292CFCC000972AB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"islenskt-taknmal-app/Preview Content\"";
+				DEVELOPMENT_TEAM = 2744BQMKXM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Íslenskt táknmál";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "odinndagur.islenskt-taknmal-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18FB252C292CFCC000972AB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"islenskt-taknmal-app/Preview Content\"";
+				DEVELOPMENT_TEAM = 2744BQMKXM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Íslenskt táknmál";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "odinndagur.islenskt-taknmal-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18FB2512292CFCBE00972AB8 /* Build configuration list for PBXProject "islenskt-taknmal-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FB2528292CFCC000972AB8 /* Debug */,
+				18FB2529292CFCC000972AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18FB252A292CFCC000972AB8 /* Build configuration list for PBXNativeTarget "islenskt-taknmal-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18FB252B292CFCC000972AB8 /* Debug */,
+				18FB252C292CFCC000972AB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18FB252D292CFCEC00972AB8 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18FB252E292CFCEC00972AB8 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18FB252D292CFCEC00972AB8 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		18FB2525292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18FB2526292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodel */,
+			);
+			currentVersion = 18FB2526292CFCC000972AB8 /* islenskt_taknmal_app.xcdatamodel */;
+			path = islenskt_taknmal_app.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18FB250F292CFCBE00972AB8 /* Project object */;
+}
